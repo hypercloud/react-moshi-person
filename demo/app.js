@@ -8,6 +8,7 @@
 import $ from 'jquery';
 import bootstrap from 'bootstrap';
 import 'bootstrap/css/bootstrap.css!';
+import '../css/custom.css!';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
