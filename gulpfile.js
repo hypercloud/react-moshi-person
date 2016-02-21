@@ -19,3 +19,5 @@ gulp.task('demo', () => {
     }
   });
 });
+
+gulp.task('default', ['demo']);

@@ -16,7 +16,11 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
+    "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@1.2.6",
+    "css": "github:systemjs/plugin-css@0.1.20",
+    "jquery": "npm:jquery@2.2.0",
+    "jsonld": "npm:jsonld@0.4.5",
     "react": "npm:react@0.14.7",
     "react-dom": "npm:react-dom@0.14.7",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -31,6 +35,9 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
+    "github:twbs/bootstrap@3.3.6": {
+      "jquery": "github:components/jquery@2.2.0"
+    },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
@@ -43,11 +50,21 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:es6-promise@2.0.1": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:fbjs@0.6.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:jsonld@0.4.5": {
+      "es6-promise": "npm:es6-promise@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"

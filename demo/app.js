@@ -5,6 +5,10 @@
  */
 'use strict';
 
+import $ from 'jquery';
+import bootstrap from 'bootstrap';
+import 'bootstrap/css/bootstrap.css!';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
