@@ -7,11 +7,12 @@
 
 let gulp = require('gulp');
 let browserSync = require('browser-sync');
+let gulpJspm = require('gulp-jspm');
 
 gulp.task('demo', () => {
   browserSync.create();
 
-  gulp.watch(['lib', 'demo', 'jspm_packages'], [browserSync.reload]);
+  gulp.watch(['lib', 'demo', 'jspm_packages', 'css', 'build'], [browserSync.reload]);
 
   browserSync.init({
     'server': {
@@ -21,3 +22,9 @@ gulp.task('demo', () => {
 });
 
 gulp.task('default', ['demo']);
+
+gulp.task('build', () => {
+	return gulp.src('demo/app.js')
+		.pipe(gulpJspm())
+		.pipe(gulp.dest('build'));
+});
